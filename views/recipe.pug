@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 #{title}
+  h2 Ingredients
+  ul
+    for ingredient, amount in ingredients
+      li #{ingredient} : #{amount}
+  h2 Instructions
+    for instruction in instructions
+      li #{instruction}
